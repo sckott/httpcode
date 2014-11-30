@@ -55,8 +55,8 @@ print_search <- function(text){
 #' http_code('1xx')
 #' http_code('3xx')
 #' http_code('30[12]')
-#' http_code(30[34]')
-#' http_code(30[34]')
+#' http_code('30[34]')
+#' http_code('30[34]')
 #'
 #' # search by text message
 #' http_search("request")
