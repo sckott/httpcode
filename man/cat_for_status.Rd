@@ -22,8 +22,6 @@ cat_for_status(301)
 dog_for_status(301)
 cat_for_status(400)
 dog_for_status(400)
-# not found
-cat_for_status(555)
 }
 }
 

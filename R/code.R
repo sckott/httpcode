@@ -39,7 +39,6 @@ print_search <- function(text){
 #' http_code(100)
 #' http_code(400)
 #' http_code(503)
-#' http_code(999)
 #'
 #' # fuzzy code search
 #' http_code('1xx')
@@ -52,7 +51,11 @@ print_search <- function(text){
 #' http_search("request")
 #' http_search("forbidden")
 #' http_search("too")
+#'
+#' @examples \dontrun{
 #' http_search("birds")
+#' http_code(999)
+#' }
 
 #' @export
 #' @rdname http
