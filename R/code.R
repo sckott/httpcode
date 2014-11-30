@@ -1,7 +1,3 @@
-# colorize <- function(text){
-#   Style.BRIGHT + text + Style.RESET_ALL
-# }
-
 print_filtered_codes <- function(code){
   code2 <- paste0(gsub("x", "\\\\d", code), "$")
   found_codes <- nozero(sapply(names(status_codes), function(x) grep(code2, x, value=TRUE)))
@@ -9,19 +5,13 @@ print_filtered_codes <- function(code){
   print_codes(found_codes)
 }
 
-print_codes <- function(codes=names(status_codes)){
-  lapply(sort(codes), print_code)
-  # for(i in seq_along(sort(codes))) print_code(codes[i])
-}
+print_codes <- function(codes=names(status_codes)) lapply(sort(codes), print_code)
 
 print_code <- function(code){
   twocodes <- status_codes[code]
   if(length(twocodes[[1]]) != 2) stopcode('No description found for code', code)
   structure(msg_list(code, twocodes[[1]][[1]], twocodes[[1]][[2]]), class="http_code")
 }
-## colorize code
-# code = _colorize(str(code))
-# cat( sprintf(msg_format, code, twocodes[[1]][[1]], twocodes[[1]][[2]]), sep="\n")
 
 #' @export
 print.http_code <- function(x, ...){
