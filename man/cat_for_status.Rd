@@ -2,17 +2,23 @@
 \name{cat_for_status}
 \alias{cat_for_status}
 \alias{dog_for_status}
-\title{Use cat pictures for various HTTP status codes}
+\title{Use cat or dog pictures for various HTTP status codes}
 \usage{
-cat_for_status(code)
+cat_for_status(code, browse = FALSE)
 
-dog_for_status(code)
+dog_for_status(code, browse = FALSE)
 }
 \arguments{
 \item{code}{An http status code}
+
+\item{browse}{(logical) If TRUE, opens image in default browser. If FALSE,
+returns the URL of the image.}
+}
+\value{
+Opens image in your default browser, or returns URL
 }
 \description{
-Use cat pictures for various HTTP status codes
+Use cat or dog pictures for various HTTP status codes
 }
 \examples{
 \donttest{
