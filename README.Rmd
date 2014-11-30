@@ -1,0 +1,80 @@
+httpcode
+=======
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE, 
+  message = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library.
+
+## Quick start
+
+### Install
+
+```{r eval=FALSE}
+install.packages("devtools")
+devtools::install_github("sckott/httpcode")
+```
+
+```{r}
+library("httpcode")
+```
+
+## Search by http code
+
+```{r}
+http_code(100)
+```
+
+```{r}
+http_code(400)
+```
+
+```{r}
+http_code(503)
+```
+
+```{r}
+http_code(999)
+```
+
+# Fuzzy code search
+
+```{r}
+http_code('1xx')
+```
+
+```{r}
+http_code('3xx')
+```
+
+```{r}
+http_code('30[12]')
+```
+
+```{r}
+http_code('30[34]')
+```
+
+# Search by text message
+
+```{r}
+http_search("request")
+```
+
+```{r}
+http_search("forbidden")
+```
+
+```{r}
+http_search("too")
+```
+
+```{r}
+http_search("birds")
+```
