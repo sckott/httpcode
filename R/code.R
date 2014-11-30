@@ -44,7 +44,7 @@ print_search <- function(text){
 #' status codes.
 #' @param text (character) A text string to search the messages or descriptions
 #' of HTTP status codes.
-#' @examples \donttest{
+#' @examples
 #' # search by code
 #' http_code(100)
 #' http_code(400)
@@ -63,7 +63,6 @@ print_search <- function(text){
 #' http_search("forbidden")
 #' http_search("too")
 #' http_search("birds")
-#' }
 
 #' @export
 #' @rdname http

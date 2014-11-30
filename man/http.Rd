@@ -20,7 +20,6 @@ of HTTP status codes.}
 Find out about http status codes
 }
 \examples{
-\donttest{
 # search by code
 http_code(100)
 http_code(400)
@@ -39,6 +38,5 @@ http_search("request")
 http_search("forbidden")
 http_search("too")
 http_search("birds")
-}
 }
 
