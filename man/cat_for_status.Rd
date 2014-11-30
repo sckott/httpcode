@@ -22,12 +22,19 @@ Use cat or dog pictures for various HTTP status codes
 }
 \examples{
 \donttest{
+# give back url
 cat_for_status(100)
 dog_for_status(100)
 cat_for_status(301)
 dog_for_status(301)
 cat_for_status(400)
 dog_for_status(400)
+
+# open image in default browser
+cat_for_status(400, browse=TRUE)
+
+# not found
+cat_for_status(555)
 }
 }
 
