@@ -3,6 +3,8 @@ httpcode
 
 
 
+[![Build Status](https://travis-ci.org/sckott/httpcode.svg)](https://travis-ci.org/sckott/httpcode)
+
 `httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library.
 
 ## Quick start
