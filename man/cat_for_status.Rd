@@ -22,7 +22,7 @@ Opens image in your default browser, or returns URL
 Use cat or dog pictures for various HTTP status codes
 }
 \examples{
-\donttest{
+\dontrun{
 # give back url
 cat_for_status(100)
 dog_for_status(100)

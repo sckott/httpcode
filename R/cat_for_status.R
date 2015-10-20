@@ -7,7 +7,7 @@
 #' @param browse (logical) If \code{TRUE}, opens image in default browser. If
 #' \code{FALSE}, returns the URL of the image.
 #' @return Opens image in your default browser, or returns URL
-#' @examples \donttest{
+#' @examples \dontrun{
 #' # give back url
 #' cat_for_status(100)
 #' dog_for_status(100)
