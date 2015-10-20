@@ -12,8 +12,8 @@ dog_for_status(code, browse = FALSE)
 \arguments{
 \item{code}{An http status code}
 
-\item{browse}{(logical) If TRUE, opens image in default browser. If FALSE,
-returns the URL of the image.}
+\item{browse}{(logical) If \code{TRUE}, opens image in default browser. If
+\code{FALSE}, returns the URL of the image.}
 }
 \value{
 Opens image in your default browser, or returns URL
@@ -35,7 +35,7 @@ dog_for_status(400)
 cat_for_status(400, browse=TRUE)
 
 # not found
-cat_for_status(555)
+# cat_for_status(555)
 }
 }
 
