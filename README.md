@@ -5,15 +5,23 @@ httpcode
 
 [![Build Status](https://travis-ci.org/sckott/httpcode.svg)](https://travis-ci.org/sckott/httpcode)
 
-`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library.
+`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library. 
 
-## Quick start
+`httpcode` has no dependencies.
 
-### Install
+## Installation
+
+Stable version
 
 
 ```r
-install.packages("devtools")
+install.packages("httpcode")
+```
+
+Development version
+
+
+```r
 devtools::install_github("sckott/httpcode")
 ```
 
@@ -88,40 +96,7 @@ http_code('3xx')
 #>   Message: Moved Permanently
 #>   Explanation: Object moved permanently -- see URI list
 #> 
-#> [[3]]
-#> <Status code: 302>
-#>   Message: Found
-#>   Explanation: Object moved temporarily -- see URI list
-#> 
-#> [[4]]
-#> <Status code: 303>
-#>   Message: See Other
-#>   Explanation: Object moved -- see Method and URL list
-#> 
-#> [[5]]
-#> <Status code: 304>
-#>   Message: Not Modified
-#>   Explanation: Document has not changed since given time
-#> 
-#> [[6]]
-#> <Status code: 305>
-#>   Message: Use Proxy
-#>   Explanation: You must use proxy specified in Location to access this resource.
-#> 
-#> [[7]]
-#> <Status code: 306>
-#>   Message: Switch Proxy
-#>   Explanation: Subsequent requests should use the specified proxy
-#> 
-#> [[8]]
-#> <Status code: 307>
-#>   Message: Temporary Redirect
-#>   Explanation: Object moved temporarily -- see URI list
-#> 
-#> [[9]]
-#> <Status code: 308>
-#>   Message: Permanent Redirect
-#>   Explanation: Object moved permanently
+...
 ```
 
 
@@ -152,7 +127,7 @@ http_code('30[34]')
 #>   Explanation: Document has not changed since given time
 ```
 
-# Search by text message
+## Search by message
 
 
 ```r
@@ -167,70 +142,7 @@ http_search("request")
 #>   Message: OK
 #>   Explanation: Request fulfilled, document follows
 #> 
-#> [[3]]
-#> <Status code: 202>
-#>   Message: Accepted
-#>   Explanation: Request accepted, processing continues off-line
-#> 
-#> [[4]]
-#> <Status code: 203>
-#>   Message: Non-Authoritative Information
-#>   Explanation: Request fulfilled from cache
-#> 
-#> [[5]]
-#> <Status code: 204>
-#>   Message: No Content
-#>   Explanation: Request fulfilled, nothing follows
-#> 
-#> [[6]]
-#> <Status code: 306>
-#>   Message: Switch Proxy
-#>   Explanation: Subsequent requests should use the specified proxy
-#> 
-#> [[7]]
-#> <Status code: 400>
-#>   Message: Bad Request
-#>   Explanation: Bad request syntax or unsupported method
-#> 
-#> [[8]]
-#> <Status code: 403>
-#>   Message: Forbidden
-#>   Explanation: Request forbidden -- authorization will not help
-#> 
-#> [[9]]
-#> <Status code: 408>
-#>   Message: Request Timeout
-#>   Explanation: Request timed out; try again later.
-#> 
-#> [[10]]
-#> <Status code: 409>
-#>   Message: Conflict
-#>   Explanation: Request conflict.
-#> 
-#> [[11]]
-#> <Status code: 413>
-#>   Message: Request Entity Too Large
-#>   Explanation: Entity is too large.
-#> 
-#> [[12]]
-#> <Status code: 414>
-#>   Message: Request-URI Too Long
-#>   Explanation: URI is too long.
-#> 
-#> [[13]]
-#> <Status code: 416>
-#>   Message: Requested Range Not Satisfiable
-#>   Explanation: Cannot satisfy request range.
-#> 
-#> [[14]]
-#> <Status code: 503>
-#>   Message: Service Unavailable
-#>   Explanation: The server cannot process the request due to a high load
-#> 
-#> [[15]]
-#> <Status code: 505>
-#>   Message: HTTP Version Not Supported
-#>   Explanation: Cannot fulfill request.
+...
 ```
 
 
@@ -261,3 +173,8 @@ http_search("too")
 http_search("birds")
 #> Error: No status code found for search: : birds
 ```
+
+
+## Bugs/features?
+
+See [issues](https://github.com/sckott/httpcode/issues)

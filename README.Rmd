@@ -2,6 +2,31 @@ httpcode
 =======
 
 ```{r echo=FALSE}
+library("knitr")
+hook_output <- knitr::knit_hooks$get("output")
+knitr::knit_hooks$set(output = function(x, options) {
+   lines <- options$output.lines
+   if (is.null(lines)) {
+     return(hook_output(x, options))  # pass to default hook
+   }
+   x <- unlist(strsplit(x, "\n"))
+   more <- "..."
+   if (length(lines)==1) {        # first n lines
+     if (length(x) > lines) {
+       # truncate the output, but add ....
+       x <- c(head(x, lines), more)
+     }
+   } else {
+     x <- c(if (abs(lines[1])>1) more else NULL,
+            x[lines],
+            if (length(x)>lines[abs(length(lines))]) more else NULL
+           )
+   }
+   # paste these lines together
+   x <- paste(c(x, ""), collapse = "\n")
+   hook_output(x, options)
+ })
+
 knitr::opts_chunk$set(
   warning = FALSE, 
   message = FALSE,
@@ -12,14 +37,21 @@ knitr::opts_chunk$set(
 
 [![Build Status](https://travis-ci.org/sckott/httpcode.svg)](https://travis-ci.org/sckott/httpcode)
 
-`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library.
+`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library. 
 
-## Quick start
+`httpcode` has no dependencies.
 
-### Install
+## Installation
+
+Stable version
 
 ```{r eval=FALSE}
-install.packages("devtools")
+install.packages("httpcode")
+```
+
+Development version
+
+```{r eval=FALSE}
 devtools::install_github("sckott/httpcode")
 ```
 
@@ -51,7 +83,7 @@ http_code(999)
 http_code('1xx')
 ```
 
-```{r}
+```{r output.lines = 1:10}
 http_code('3xx')
 ```
 
@@ -63,9 +95,9 @@ http_code('30[12]')
 http_code('30[34]')
 ```
 
-# Search by text message
+## Search by message
 
-```{r}
+```{r output.lines = 1:10}
 http_search("request")
 ```
 
@@ -80,3 +112,8 @@ http_search("too")
 ```{r}
 http_search("birds")
 ```
+
+
+## Bugs/features?
+
+See [issues](https://github.com/sckott/httpcode/issues)
