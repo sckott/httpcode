@@ -1,9 +1,12 @@
 Package: httpcode
-Title: HTTP Status Code Helper
-Description: Explain the meaning of HTTP status codes. Functions
-    included for searching for codes by full or partial number,
+Title: 'HTTP' Status Code Helper
+Description: Find and explain the meaning of 'HTTP' status codes.
+    Functions included for searching for codes by full or partial number,
     by message, and get appropriate dog and cat images for many
     status codes.
 Version: 0.0.9.9000
-Authors@R: "Scott Chamberlain <myrmecocystus@gmail.com> [aut, cre]"
+Authors@R: person("Scott", "Chamberlain", role = c("aut","cre"),
+    email = "myrmecocystus@gmail.com")
 License: MIT + file LICENSE
+Imports:
+    utils

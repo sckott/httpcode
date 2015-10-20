@@ -1,5 +1,6 @@
 #' Explain the meaning of HTTP status codes
 #'
+#' @importFrom utils browseURL
 #' @name httpcode-package
 #' @aliases httpcode
 #' @docType package
