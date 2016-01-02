@@ -28,7 +28,7 @@ knitr::knit_hooks$set(output = function(x, options) {
  })
 
 knitr::opts_chunk$set(
-  warning = FALSE, 
+  warning = FALSE,
   message = FALSE,
   collapse = TRUE,
   comment = "#>"
@@ -36,8 +36,10 @@ knitr::opts_chunk$set(
 ```
 
 [![Build Status](https://travis-ci.org/sckott/httpcode.svg)](https://travis-ci.org/sckott/httpcode)
+[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/httpcode)](https://github.com/metacran/cranlogs.app)
+[![cran version](http://www.r-pkg.org/badges/version/httpcode)](http://cran.rstudio.com/package=httpcode)
 
-`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library. 
+`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library.
 
 `httpcode` has no dependencies.
 

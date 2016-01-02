@@ -4,6 +4,8 @@ httpcode
 
 
 [![Build Status](https://travis-ci.org/sckott/httpcode.svg)](https://travis-ci.org/sckott/httpcode)
+[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/httpcode)](https://github.com/metacran/cranlogs.app)
+[![cran version](http://www.r-pkg.org/badges/version/httpcode)](http://cran.rstudio.com/package=httpcode)
 
 `httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library. 
 
