@@ -4,7 +4,7 @@ Description: Find and explain the meaning of 'HTTP' status codes.
     Functions included for searching for codes by full or partial number,
     by message, and get appropriate dog and cat images for many
     status codes.
-Version: 0.1.1.9000
+Version: 0.1.6.9100
 Authors@R: person("Scott", "Chamberlain", role = c("aut","cre"),
     email = "myrmecocystus@gmail.com")
 License: MIT + file LICENSE
@@ -12,3 +12,4 @@ URL: https://github.com/sckott/httpcode
 BugReports: http://www.github.com/sckott/httpcode/issues
 Imports:
     utils
+RoxygenNote: 5.0.1

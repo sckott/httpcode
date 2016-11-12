@@ -64,6 +64,20 @@ status_codes <- list(
   `424` = list('Failed Dependency / Method Failure', 'WebDAV; RFC 4918'),
   `425` = list('Unordered Collection', 'Internet draft'),
   `426` = list('Upgrade Required', 'client should switch to a different protocol'),
+  `428` = list('Precondition Required', 'RFC 6585'),
+  `429` = list('Too Many Requests', 'RFC 6585'),
+  `431` = list('Request Header Fields Too Large', 'RFC 6585'),
+  `440` = list('Login Timeout', 'Microsoft'),
+  `444` = list('No Response', 'Nginx'),
+  `449` = list('Retry With', 'Microsoft'),
+  `450` = list('Blocked by Windows Parental Controls', 'Microsoft'),
+  `451` = list('Unavailable For Legal Reasons', 'RFC 7725'),
+  `494` = list('Request Header Too Large', 'Nginx'),
+  `495` = list('Cert Error', 'Nginx'),
+  `496` = list('No Cert', 'Nginx'),
+  `497` = list('HTTP to HTTPS', 'Nginx'),
+  `498` = list('Token expired/invalid', 'Esri'),
+  `499` = list('Client Closed Request', 'Nginx'),
 
   `500` = list('Internal Server Error', 'Server got itself in trouble'),
   `501` = list('Not Implemented',
@@ -77,5 +91,9 @@ status_codes <- list(
   `506` = list('Variant Also Negotiates', 'RFC 2295'),
   `507` = list('Insufficient Storage', 'WebDAV; RFC 4918'),
   `508` = list('Loop Detected', 'WebDAV; RFC 5842'),
-  `509` = list('Bandwidth Limit Exceeded', 'Apache bw/limited extension')
+  `509` = list('Bandwidth Limit Exceeded', 'Apache bw/limited extension'),
+  `510` = list('Not Extended', 'RFC 2774'),
+  `511` = list('Network Authentication Required', 'RFC 6585'),
+  `598` = list('Network read timeout error', 'Unknown'),
+  `599` = list('Network connect timeout error', 'Unknown')
 )

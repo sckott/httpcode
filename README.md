@@ -7,9 +7,19 @@ httpcode
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/httpcode)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/httpcode)](http://cran.rstudio.com/package=httpcode)
 
-`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python `httpcode` library. 
+`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python [httpcode](https://github.com/rspivak/httpcode) library.
 
 `httpcode` has no dependencies.
+
+Follows [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt), and for additional codes 
+following [RFC 6585](https://tools.ietf.org/html/rfc6585).
+
+Structure of information for each status code:
+
+* `status_code` - the status code
+* `message` - very brief message explaining the code
+* `explanation` - more verbose explanation, but still short
+* `explanation_verbose` - the complete explanation
 
 ## Installation
 
@@ -168,6 +178,21 @@ http_search("too")
 #> <Status code: 414>
 #>   Message: Request-URI Too Long
 #>   Explanation: URI is too long.
+#> 
+#> [[3]]
+#> <Status code: 429>
+#>   Message: Too Many Requests
+#>   Explanation: RFC 6585
+#> 
+#> [[4]]
+#> <Status code: 431>
+#>   Message: Request Header Fields Too Large
+#>   Explanation: RFC 6585
+#> 
+#> [[5]]
+#> <Status code: 494>
+#>   Message: Request Header Too Large
+#>   Explanation: Nginx
 ```
 
 
