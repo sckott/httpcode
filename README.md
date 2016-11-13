@@ -74,6 +74,26 @@ http_code(999)
 #> Error: No description found for code: 999
 ```
 
+## Get verbose status code description
+
+
+```r
+http_code(100, verbose = TRUE)
+#> <Status code: 100>
+#>   Message: Continue
+#>   Explanation: Request received, please continue
+#>   Verbose Explanation: The client SHOULD continue with its request. This interim response is used to inform the client that the initial part of the request has been received and has not yet been rejected by the server. The client SHOULD continue by sending the remainder of the request or, if the request has already been completed, ignore this response. The server MUST send a final response after the request has been completed. See section 8.2.3 for detailed discussion of the use and handling of this status code.
+```
+
+
+```r
+http_code(400, verbose = TRUE)
+#> <Status code: 400>
+#>   Message: Bad Request
+#>   Explanation: Bad request syntax or unsupported method
+#>   Verbose Explanation: The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications.
+```
+
 # Fuzzy code search
 
 

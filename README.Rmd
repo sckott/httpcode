@@ -89,6 +89,16 @@ http_code(503)
 http_code(999)
 ```
 
+## Get verbose status code description
+
+```{r}
+http_code(100, verbose = TRUE)
+```
+
+```{r}
+http_code(400, verbose = TRUE)
+```
+
 # Fuzzy code search
 
 ```{r}
