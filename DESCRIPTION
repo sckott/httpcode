@@ -4,7 +4,7 @@ Description: Find and explain the meaning of 'HTTP' status codes.
     Functions included for searching for codes by full or partial number,
     by message, and get appropriate dog and cat images for many
     status codes.
-Version: 0.1.6.9100
+Version: 0.1.7.9100
 Authors@R: person("Scott", "Chamberlain", role = c("aut","cre"),
     email = "myrmecocystus@gmail.com")
 License: MIT + file LICENSE
