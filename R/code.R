@@ -91,7 +91,15 @@ print.http_code <- function(x, ...){
   cat(sprintf("  Message: %s", x$message), sep = "\n")
   cat(sprintf("  Explanation: %s", x$explanation), sep = "\n")
   if (!is.null(x$verbose_explanation)) {
-    cat(sprintf("  Verbose Explanation: %s", x$verbose_explanation), sep = "\n")
+    cat(
+      strwrap(
+        sprintf("  Verbose Explanation: %s", x$verbose_explanation),
+        getOption("width"),
+        indent = 2,
+        exdent = 4
+      ),
+      sep = "\n"
+    )
   }
 }
 
