@@ -20,6 +20,16 @@ Default: \code{FALSE}}
 \item{text}{(character) A text string to search the messages or descriptions
 of HTTP status codes.}
 }
+\value{
+on S3 object of class \code{http_code}, that is inside a list
+of the form:
+\itemize{
+ \item status_code - the status code
+ \item message - very brief message explaining the code
+ \item explanation - more verbose explanation, but still short
+ \item explanation_verbose - the complete explanation
+}
+}
 \description{
 Find out about http status codes
 }
