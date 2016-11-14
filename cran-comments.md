@@ -16,7 +16,7 @@
 
 ## Reverse dependencies
 
-There are no reverse dependencies.
+The two reverse dependencies were checked, and no errors found.
 
 ---
 
