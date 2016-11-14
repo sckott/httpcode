@@ -21,6 +21,10 @@ Opens image in your default browser, or returns URL
 \description{
 Use cat or dog pictures for various HTTP status codes
 }
+\details{
+uses a service for cats (https://http.cat) and
+dogs (https://httpstatusdogs.com)
+}
 \examples{
 \dontrun{
 # give back url
