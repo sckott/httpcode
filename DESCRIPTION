@@ -10,6 +10,4 @@ Authors@R: person("Scott", "Chamberlain", role = c("aut","cre"),
 License: MIT + file LICENSE
 URL: https://github.com/sckott/httpcode
 BugReports: http://www.github.com/sckott/httpcode/issues
-Imports:
-    utils
 RoxygenNote: 5.0.1

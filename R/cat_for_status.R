@@ -26,7 +26,7 @@ cat_for_status <- function(code, browse = FALSE){
   code <- as.character(code)
   if (code %in% names(status_codes)) {
     url <- sprintf('http://httpcats.herokuapp.com/%s', code)
-    if (browse) browseURL(url) else url
+    if (browse) utils::browseURL(url) else url
   } else {
     stopcode("No cat code found", "")
   }
@@ -38,7 +38,7 @@ dog_for_status <- function(code, browse = FALSE) {
   code <- as.character(code)
   if (code %in% names(status_codes)) {
     url <- sprintf('http://httpstatusdogs.com/wp-content/uploads/%s.jpg', code)
-    if (browse) browseURL(url) else url
+    if (browse) utils::browseURL(url) else url
   } else {
     stopcode("No dog code found", "")
   }
