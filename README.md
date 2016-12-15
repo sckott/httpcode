@@ -82,7 +82,14 @@ http_code(100, verbose = TRUE)
 #> <Status code: 100>
 #>   Message: Continue
 #>   Explanation: Request received, please continue
-#>   Verbose Explanation: The client SHOULD continue with its request. This interim response is used to inform the client that the initial part of the request has been received and has not yet been rejected by the server. The client SHOULD continue by sending the remainder of the request or, if the request has already been completed, ignore this response. The server MUST send a final response after the request has been completed. See section 8.2.3 for detailed discussion of the use and handling of this status code.
+#>   Verbose Explanation: The client SHOULD continue with its request. This
+#>     interim response is used to inform the client that the initial part of
+#>     the request has been received and has not yet been rejected by the
+#>     server. The client SHOULD continue by sending the remainder of the
+#>     request or, if the request has already been completed, ignore this
+#>     response. The server MUST send a final response after the request has
+#>     been completed. See section 8.2.3 for detailed discussion of the use
+#>     and handling of this status code.
 ```
 
 
@@ -91,7 +98,9 @@ http_code(400, verbose = TRUE)
 #> <Status code: 400>
 #>   Message: Bad Request
 #>   Explanation: Bad request syntax or unsupported method
-#>   Verbose Explanation: The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications.
+#>   Verbose Explanation: The request could not be understood by the server
+#>     due to malformed syntax. The client SHOULD NOT repeat the request
+#>     without modifications.
 ```
 
 # Fuzzy code search
@@ -235,3 +244,7 @@ http_search("birds")
 ## Bugs/features?
 
 See [issues](https://github.com/sckott/httpcode/issues)
+
+## Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
