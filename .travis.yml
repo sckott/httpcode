@@ -1,4 +1,6 @@
 language: r
+dist: trusty
+cache: packages
 
 notifications:
   email:
