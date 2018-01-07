@@ -60,5 +60,8 @@ http_search("too")
 ## verbose explanation
 http_search("request", verbose = TRUE)
 
+\dontrun{
+http_search("birds")
+http_code(999)
 }
-
+}

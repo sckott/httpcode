@@ -2,8 +2,8 @@
 % Please edit documentation in R/httpcode-package.R
 \docType{package}
 \name{httpcode-package}
-\alias{httpcode}
 \alias{httpcode-package}
+\alias{httpcode}
 \title{Explain the meaning of HTTP status codes}
 \description{
 Explain the meaning of HTTP status codes
@@ -12,4 +12,3 @@ Explain the meaning of HTTP status codes
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 }
 \keyword{package}
-
