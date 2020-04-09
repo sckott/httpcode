@@ -2,9 +2,9 @@
 #'
 #' @name http
 #' @param code (character) An http status code, or a regex search for HTTP
-#' status codes.
+#' status codes. must be length 1. required
 #' @param text (character) A text string to search the messages or descriptions
-#' of HTTP status codes.
+#' of HTTP status codes. required
 #' @param verbose (logical) include verbose status code explanation.
 #' Default: `FALSE`
 #'
@@ -50,7 +50,10 @@
 
 #' @export
 #' @rdname http
-http_code <- function(code = NULL, verbose = FALSE) {
+http_code <- function(code, verbose = FALSE) {
+  assert(code, c("numeric", "integer", "character"))
+  assert(verbose, "logical")
+  stopifnot(length(code) == 1)
   code <- as.character(code)
   if (is.null(code)) {
     print_codes()
@@ -65,7 +68,11 @@ http_code <- function(code = NULL, verbose = FALSE) {
 
 #' @export
 #' @rdname http
-http_search <- function(text = NULL, verbose = FALSE) print_search(text, verbose)
+http_search <- function(text, verbose = FALSE) {
+  assert(text, "character")
+  stopifnot(length(text) == 1)
+  print_search(text, verbose)
+}
 
 
 # helpers -------------------------------

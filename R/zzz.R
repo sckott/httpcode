@@ -22,3 +22,12 @@ stopcode <- function(x, y) stop(sprintf('%s: %s\n', x, y), call. = FALSE)
 `%||%` <- function(x, y) if (is.null(x)) y else x
 
 comp <- function(l) Filter(Negate(is.null), l)
+
+assert <- function(x, y) {
+  if (!is.null(x)) {
+    if (!inherits(x, y)) {
+      stop(deparse(substitute(x)), " must be of class ",
+           paste0(y, collapse = ", "), call. = FALSE)
+    }
+  }
+}

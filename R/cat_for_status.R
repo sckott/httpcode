@@ -24,24 +24,30 @@
 #' # not found
 #' # cat_for_status(555)
 #' }
-cat_for_status <- function(code, browse = FALSE){
+cat_for_status <- function(code, browse = FALSE) {
+  assert(code, c("numeric", "integer", "character"))
+  stopifnot(length(code) == 1)
+  assert(browse, "logical")
   code <- as.character(code)
   if (code %in% names(status_codes)) {
     url <- sprintf('https://http.cat/%s', code)
     if (browse) utils::browseURL(url) else url
   } else {
-    stopcode("No cat code found", "")
+    stopcode("No cat code found", code)
   }
 }
 
 #' @export
 #' @rdname cat_for_status
 dog_for_status <- function(code, browse = FALSE) {
+  assert(code, c("numeric", "integer", "character"))
+  stopifnot(length(code) == 1)
+  assert(browse, "logical")
   code <- as.character(code)
   if (code %in% names(status_codes)) {
     url <- sprintf('https://httpstatusdogs.com/wp-content/uploads/%s.jpg', code)
     if (browse) utils::browseURL(url) else url
   } else {
-    stopcode("No dog code found", "")
+    stopcode("No dog code found", code)
   }
 }
