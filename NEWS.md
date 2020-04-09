@@ -1,3 +1,15 @@
+httpcode 0.3.0
+==============
+
+### NEW FEATURES
+
+* Added support for additional non-official HTTP status codes, and filled in some missing details for some status codes (#6)
+
+### MINOR IMPROVEMENTS
+
+* added tests (#7)
+
+
 httpcode 0.2.0
 ==============
 
