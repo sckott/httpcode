@@ -4,8 +4,8 @@
 #' @name cat_for_status
 #'
 #' @param code An http status code
-#' @param browse (logical) If \code{TRUE}, opens image in default browser. If
-#' \code{FALSE}, returns the URL of the image.
+#' @param browse (logical) If `TRUE`, opens image in default browser. If
+#' `FALSE`, returns the URL of the image.
 #' @details uses a service for cats (https://http.cat) and
 #' dogs (https://httpstatusdogs.com)
 #' @return Opens image in your default browser, or returns URL
