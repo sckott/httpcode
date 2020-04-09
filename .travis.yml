@@ -7,7 +7,7 @@ r_binary_packages:
   - covr
 
 after_success:
-  - R -e 'covr::codecov()
+  - R -e 'covr::codecov()'
 
 notifications:
   email:
