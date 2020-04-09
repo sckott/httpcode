@@ -5,15 +5,16 @@ httpcode
 
 [![cran checks](https://cranchecks.info/badges/worst/httpcode)](https://cranchecks.info/pkgs/httpcode)
 [![Build Status](https://travis-ci.org/sckott/httpcode.svg)](https://travis-ci.org/sckott/httpcode)
-[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/httpcode)](https://github.com/metacran/cranlogs.app)
-[![cran version](http://www.r-pkg.org/badges/version/httpcode)](https://cran.r-project.org/package=httpcode)
+[![codecov](https://codecov.io/gh/sckott/httpcode/branch/master/graph/badge.svg)](https://codecov.io/gh/sckott/httpcode)
+[![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/httpcode)](https://github.com/metacran/cranlogs.app)
+[![cran version](https://www.r-pkg.org/badges/version/httpcode)](https://cran.r-project.org/package=httpcode)
 
-`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python [httpcode](https://github.com/rspivak/httpcode) library.
+`httpcode` is a tiny R package to search for and show http code messages and description. It's a port of the Python httpcode (https://github.com/rspivak/httpcode) library.
 
 `httpcode` has no dependencies.
 
-Follows [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt), and for additional codes 
-following [RFC 6585](https://tools.ietf.org/html/rfc6585).
+Follows RFC 2616 (https://www.ietf.org/rfc/rfc2616.txt), and for additional codes 
+following RFC 6585 (https://tools.ietf.org/html/rfc6585).
 
 Structure of information for each status code:
 
