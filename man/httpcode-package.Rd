@@ -4,7 +4,10 @@
 \name{httpcode-package}
 \alias{httpcode-package}
 \alias{httpcode}
-\title{Explain the meaning of HTTP status codes}
+\title{httpcode}
+\description{
+Explain the meaning of HTTP status codes
+}
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 }

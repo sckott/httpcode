@@ -1,5 +1,5 @@
-#' Explain the meaning of HTTP status codes
-#'
+#' @title httpcode
+#' @description Explain the meaning of HTTP status codes
 #' @name httpcode-package
 #' @aliases httpcode
 #' @docType package
