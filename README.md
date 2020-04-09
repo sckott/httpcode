@@ -122,7 +122,7 @@ http_code('1xx')
 #> [[3]]
 #> <Status code: 102>
 #>   Message: Processing
-#>   Explanation: WebDAV; RFC 2518
+#>   Explanation: This code indicates that the server has received and is processing the request, but no response is available yet (WebDAV; RFC 2518)
 ```
 
 
@@ -220,19 +220,24 @@ http_search("too")
 #>   Explanation: URI is too long.
 #> 
 #> [[5]]
-#> <Status code: 429>
-#>   Message: Too Many Requests
-#>   Explanation: RFC 6585
+#> <Status code: 425>
+#>   Message: Too Early
+#>   Explanation: Indicates that the server is unwilling to risk processing a request that might be replayed.
 #> 
 #> [[6]]
-#> <Status code: 431>
-#>   Message: Request Header Fields Too Large
-#>   Explanation: RFC 6585
+#> <Status code: 429>
+#>   Message: Too Many Requests
+#>   Explanation: The user has sent too many requests in a given amount of time ("rate limiting") (RFC 6585)
 #> 
 #> [[7]]
+#> <Status code: 431>
+#>   Message: Request Header Fields Too Large
+#>   Explanation: The server is unwilling to process the request because its header fields are too large. The request may be resubmitted after reducing the size of the request header fields (RFC 6585)
+#> 
+#> [[8]]
 #> <Status code: 494>
-#>   Message: Request Header Too Large
-#>   Explanation: Nginx
+#>   Message: Request header too large (Nginx)
+#>   Explanation: Client sent too large request or too long header line.
 ```
 
 
