@@ -3,8 +3,7 @@ httpcode
 
 
 
-[![cran checks](https://cranchecks.info/badges/worst/httpcode)](https://cranchecks.info/pkgs/httpcode)
-[![Build Status](https://travis-ci.org/sckott/httpcode.svg)](https://travis-ci.org/sckott/httpcode)
+[![cran checks](https://badges.cranchecks.info/worst/httpcode.svg)](https://cloud.r-project.org/web/checks/check_results_httpcode.html)
 [![codecov](https://codecov.io/gh/sckott/httpcode/branch/master/graph/badge.svg)](https://codecov.io/gh/sckott/httpcode)
 [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/httpcode)](https://github.com/metacran/cranlogs.app)
 [![cran version](https://www.r-pkg.org/badges/version/httpcode)](https://cran.r-project.org/package=httpcode)
@@ -36,7 +35,8 @@ Development version
 
 
 ```r
-remotes::install_github("sckott/httpcode")
+install.packages("pak")
+pak::pkg_install("sckott/httpcode")
 ```
 
 
@@ -255,4 +255,4 @@ See [issues](https://github.com/sckott/httpcode/issues)
 
 Please note that this project is released with a [Contributor Code of Conduct][coc]. By participating in this project you agree to abide by its terms.
 
-[coc]: https://github.com/sckott/httpcode/blob/master/CODE_OF_CONDUCT.md
+[coc]: https://github.com/sckott/httpcode/blob/main/CODE_OF_CONDUCT.md
