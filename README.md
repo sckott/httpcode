@@ -4,7 +4,8 @@ httpcode
 
 
 [![cran checks](https://badges.cranchecks.info/worst/httpcode.svg)](https://cloud.r-project.org/web/checks/check_results_httpcode.html)
-[![codecov](https://codecov.io/gh/sckott/httpcode/branch/master/graph/badge.svg)](https://codecov.io/gh/sckott/httpcode)
+[![R-check](https://github.com/sckott/httpcode/actions/workflows/R-check.yaml/badge.svg)](https://github.com/sckott/httpcode/actions/workflows/R-check.yaml)
+[![codecov](https://codecov.io/gh/sckott/httpcode/branch/master/graph/badge.svg?token=gvEuPJXQuK)](https://codecov.io/gh/sckott/httpcode)
 [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/httpcode)](https://github.com/metacran/cranlogs.app)
 [![cran version](https://www.r-pkg.org/badges/version/httpcode)](https://cran.r-project.org/package=httpcode)
 
