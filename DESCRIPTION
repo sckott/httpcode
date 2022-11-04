@@ -16,4 +16,4 @@ Language: en-US
 Roxygen: list(markdown = TRUE)
 Suggests:
     testthat
-RoxygenNote: 7.1.0
+RoxygenNote: 7.2.1
