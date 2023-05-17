@@ -7,7 +7,7 @@
 #' @param browse (logical) If `TRUE`, opens image in default browser. If
 #' `FALSE`, returns the URL of the image.
 #' @details uses a service for cats (https://http.cat) and
-#' dogs (https://http.dog) and goats (httpgoats.com)
+#' dogs (https://http.dog) and goats (https://httpgoats.com)
 #' @return Opens image in your default browser, or returns URL
 #' @examples \dontrun{
 #' # give back url
