@@ -2,14 +2,14 @@ test_that("cat_for_status", {
   x <- cat_for_status(100)
 
   expect_is(x, "character")
-  expect_match(x, "https://http.cat/100")
+  expect_match(x, "https://httpcats.com/100")
 })
 
 test_that("dog_for_status", {
   w <- dog_for_status(400)
 
   expect_is(w, "character")
-  expect_match(w, "https://httpstatusdogs.com/wp-content/uploads/400.jpg")
+  expect_match(w, "https://http.dog/400.jpg")
 })
 
 test_that("cats and dogs fails well", {
