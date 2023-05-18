@@ -3,5 +3,6 @@
 S3method(print,http_code)
 export(cat_for_status)
 export(dog_for_status)
+export(goat_for_status)
 export(http_code)
 export(http_search)

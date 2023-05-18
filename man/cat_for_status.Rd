@@ -3,11 +3,14 @@
 \name{cat_for_status}
 \alias{cat_for_status}
 \alias{dog_for_status}
-\title{Use cat or dog pictures for various HTTP status codes}
+\alias{goat_for_status}
+\title{Use cat or dog or goat pictures for various HTTP status codes}
 \usage{
 cat_for_status(code, browse = FALSE)
 
 dog_for_status(code, browse = FALSE)
+
+goat_for_status(code, browse = FALSE)
 }
 \arguments{
 \item{code}{An http status code}
@@ -19,21 +22,24 @@ dog_for_status(code, browse = FALSE)
 Opens image in your default browser, or returns URL
 }
 \description{
-Use cat or dog pictures for various HTTP status codes
+Use cat or dog or goat pictures for various HTTP status codes
 }
 \details{
-uses a service for cats (https://http.cat) and
-dogs (https://httpstatusdogs.com)
+uses a service for cats (https://httpcats.com) and
+dogs (https://http.dog) and goats (https://httpgoats.com)
 }
 \examples{
 \dontrun{
 # give back url
 cat_for_status(100)
 dog_for_status(100)
+goat_for_status(100)
 cat_for_status(301)
 dog_for_status(301)
+goat_for_status(301)
 cat_for_status(400)
 dog_for_status(400)
+goat_for_status(400)
 
 # open image in default browser
 cat_for_status(400, browse=TRUE)
